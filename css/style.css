@@ -1,0 +1,401 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden
+}
+.box {
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.active {
+    color :#0c3f9b;
+}
+
+/*-------header-------*/
+.header {
+    height: 50px;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+    background: url(../image/headlogo.jpg) no-repeat left center;
+}
+
+.header p {
+    font-size: 14px;
+    line-height:1.5;
+    text-align: right;
+    color: #f95916;  
+}
+.header span,
+.header a {
+    padding: 5px 0;
+    font-size: 12px;
+    color: #666
+}
+/*-------banner背景图设置-------*/
+.banner { 
+    position: relative;
+    min-width: 1200px;   
+   
+}
+.banner img {
+    width: 100%;
+}
+/*---导航定位--*/
+.banner-work .navgb {
+    position: absolute;
+    bottom: 5px;;
+    right: 0;
+    width: 970px;
+    height: 50px;
+    background: url(../image/nav.jpg) repeat-x 0 0;
+}
+
+.navgb ul li {
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    text-align: center; 
+    z-index: 10;
+    position: relative;
+}
+.navgb ul li:hover .tip {
+    display: block;
+}
+.navgb li a {
+    display: inline-block;
+    width: 100%;
+    height: 45px;
+    border-right: 1px dotted #fff;
+    line-height: 45px;
+    color: #fff;
+}
+
+.tip {
+    display: none;
+    z-index: 11;
+    position: absolute;
+    top: 50px;
+    font-size: 13px;
+    background-color: #092066;   
+}
+.tip ul li {
+    height: 35px;
+    border-bottom: 1px solid #888;
+    
+}
+.tip ul li a{
+    line-height: 35px;
+}
+.icon {
+    display: block;
+    width: 0;
+    height: 0;
+    margin-top: -15px;
+    margin-left: 50px;
+    border: 10px solid transparent;
+    border-bottom:  5px solid #ddd;
+}
+/*-------主体内容-------*/
+.main {
+    margin-top: 20px;
+    z-index: 1;
+}
+/*--列表----*/
+.worklist {
+    width: 175px;
+}
+.worklist li {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    width: 175px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    background: url(../image/content.jpg) no-repeat 145px center;
+}
+.worklist  .working {
+    font-size: 16px;
+    color: #fff;
+    background: url(../image/nav.jpg) repeat-x 0 0;
+}
+.worklist li a {
+    font-size: 14px;
+    color: #888;
+}
+/*---内容介绍----*/
+.workmain {
+    width: 960px;
+    
+}
+.workmain h2 {
+    padding-bottom: 20px;
+    font-weight: 400;  
+}
+.workmain h3 {
+    padding-bottom: 10px;
+    font-weight: 400;  
+}
+.wmhead {
+    margin-bottom: 20px;
+    padding-bottom:20px; 
+    border-bottom: 1px solid #ddd;
+	font-size: 12px;
+    line-height: 1.5;
+    text-align: right;  
+}
+.wmhead > * {
+    color: #888;
+}
+.worktext {
+    width: 650px;
+}
+.worktext p,
+.other h3 {
+    font-size: 14px;
+    line-height: 25px;
+    color: #666;
+}
+
+/*---联系我们&友情链接----*/
+.other {
+    width: 250px;
+}
+.other h3 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+.withus p {
+    font-size: 12px;
+    line-height: 25px;
+    color: #666;
+}
+.withus p span {
+    font-weight: 700;
+}
+.withus p a {
+    text-decoration: underline;
+    color: #666;
+}
+/*-------底部footer------*/
+.friendlink {
+     margin-top: 20px;
+}
+.friendlink ul {
+    padding-top: 20px;
+}
+.footer {
+    min-width: 1200px;
+    background-color: #eee;
+}
+.footernav {
+    padding:30px 0;
+}
+.footernav h3 {
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #444
+}
+.footernav ul li{
+	float: left;
+    display: inline-block;
+    border-right: 1px solid #dadada;
+    width: 240px;
+    height: 150px;
+    text-align: center;
+}
+.footernav ul li a {
+    display: block;
+    font-size: 12px;
+    line-height: 25px;
+    color: #888;
+}
+.copyright {
+    min-width: 1200px;
+    height: 50px;
+	background-color: #ddd;
+    
+}
+.copyright p {
+    font-size: 12px;
+    line-height: 50px;
+    color: #888
+}
+/*----------index----------*/
+.contain {
+    margin-top: 25px;
+    z-index: 1;  
+}
+.contain a {
+    font-size: 13px;
+}
+.summary h2,
+.market h2,
+.trade h2,
+.contact h2 {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #efefef;
+    font-size: 16px;
+    font-weight: normal;    
+    line-height: 16px;
+}
+.summary {
+	width: 430px;
+    padding-right: 30px;
+    border-right: 1px solid #efefef;
+}
+.summary img {
+    float: left;
+    padding-right: 20px;
+}
+.summary p {
+    padding-bottom:20px; 
+    font-size: 14px;
+    color: #666;    
+}
+
+.btn {
+    display: inline-block;
+    width: 105px;
+    height:35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background-image: url(../image/10.jpg);
+    background-repeat: no-repeat;
+    background-position: 90px center;
+    background-color: #fa4d07;
+    
+}
+.market { 
+    padding: 0 30px;
+    border-right: 1px solid #efefef;
+    width: 320px;
+}
+.market img {
+    float: left;
+    padding-right: 15px; 
+}
+.market ul li {
+    border-bottom: 1px dotted #efefef;
+    height: 50px;
+    font-size: 14px;    
+}
+.market ul li a {
+    display: block;
+    color: #666;   
+}
+.market ul li span {
+    color: #666;
+}
+
+.trade-contact {
+    padding-left: 30px;
+	width: 320px;
+}
+.trade-contact a:visited {
+    color: #888;
+}
+.trade {
+    padding-bottom: 30px;
+}
+.trade ul li {
+    background: url(../image/15.jpg) no-repeat left center;
+}
+.trade ul li a {
+	padding-left: 10px;
+    font-size: 12px;
+}
+.contact p {
+    font-size: 12px;
+    color: #666;
+}
+
+.link {
+    clear: both;
+    overflow: hidden;
+    margin-top: 30px;
+    border: 1px solid #efefef;  
+}
+
+.link li {
+    display: inline-block;
+    float: left;
+    padding: 20px 70px;
+}
+
+
+/*-----------vip-----------*/
+.undl {
+    border-bottom: 1px solid #ddd;
+}
+.vip {
+    padding: 10px 0; 
+}
+.vip span {
+    font-size: 18px;
+    padding-right: 50px;
+}
+
+.undl a {
+    padding-right: 50px;
+    border-right: 1px solid #ddd;
+    color: #888
+}
+.undl img {
+    position: relative;
+    top: 10px;
+}
+
+/*------------hr----------*/
+
+.worktext h4{
+    padding-bottom: 10px;
+}
+
+.worktext .hr {
+    line-height: 40px;
+}
+
+
+/*-----------cont---------*/
+.cont h3 {
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.cont h4 {
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+.cont img {
+    float:right;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
